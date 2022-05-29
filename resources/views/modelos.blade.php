@@ -25,6 +25,26 @@
 
 
 
+    <div class="col-md-16 d-flex flex-row justify-content-center alig-items-center">
+        <form action="{{route('contact')}}" method="post">
+            @csrf
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+
+
 
 
 
